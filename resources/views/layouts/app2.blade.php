@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @stack('styles')
-        <title>Instagram - @yield('titulo')</title>
+        <title>Devstagram - @yield('titulo')</title>
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
     </head>
     <body class="bg-gray-100">
         <header class="p-5 border-b bg-white shadow">
             <div class="container mx-auto flex justify-between items-center">
-            <a href="{{ route('home') }}" class="text-3xl font-black">Instagram</a>
+            <a href="{{ route('home') }}" class="text-3xl font-black">Devstagram</a>
 
             @auth
                 <nav class="flex gap-4 items-center">
@@ -55,7 +55,7 @@
         </main>
 
         <footer class="mt-10 text-center p-5 text-gray-500 font-bold uppercase">
-            Instagram - Todos los derechos reservados {{ now()->year }}
+            Devstagram - Todos los derechos reservados {{ now()->year }}
         </footer>
     </body>
 </html>
