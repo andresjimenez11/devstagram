@@ -34,7 +34,7 @@
     <div class="bg-white shadow mb-5 max-h-[30rem]  overflow-y-scroll mt-10">
         @if ($comentarios->count())
         
-            @foreach ($comentarios as $comentario)
+            @foreach ($comentarios->reverse() as $comentario)
         
                 <div class="p-5 border-gray-300 border-b">
                     <a class= "font-bold" href="{{ route('posts.index', $comentario->user) }}">
